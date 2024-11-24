@@ -3,13 +3,12 @@ title: "Page_Test"
 author: "Anthony"
 date: "`r Sys.Date()`"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-2+2
 ```
 2+2
 ## R Markdown
