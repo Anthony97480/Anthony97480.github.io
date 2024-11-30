@@ -3,7 +3,9 @@
 \contentsline {paragraph}{•}{1}{section.1}%
 \contentsline {section}{\numberline {2}Description du contexte historique}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Le passé du monde}{2}{subsection.2.1}%
+\contentsline {paragraph}{•}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Le monde aujourd'hui}{2}{subsection.2.2}%
+\contentsline {paragraph}{•}{2}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Description du/des héros}{3}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Le héros principal:}{3}{subsection.3.1}%
 \contentsline {paragraph}{•}{3}{subsection.3.1}%
