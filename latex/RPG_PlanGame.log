@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.11.28)  30 NOV 2024 14:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.11.28)  30 NOV 2024 15:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1250,21 +1250,14 @@ Package minitoc(hints) Warning: W0024
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-
-
-Package rerunfilecheck Warning: File `RPG_PlanGame.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `RPG_PlanGame.out':
-(rerunfilecheck)             Before: A6B0424B8C839D0FF5B5CB623E8D9DB8;2592
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `RPG_PlanGame.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30020 strings out of 475248
- 578453 string characters out of 5757812
+ 30003 strings out of 475248
+ 578224 string characters out of 5757812
  1924785 words of memory out of 5000000
- 50946 multiletter control sequences out of 15000+600000
+ 50929 multiletter control sequences out of 15000+600000
  575155 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,9n,79p,521b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1279,9 +1272,9 @@ ts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\tonyf\AppData\Local\MiKT
 eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1095.pk> <C:\Users\tonyf\AppData\Loca
 l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\tonyf\AppDat
 a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk>
-Output written on RPG_PlanGame.pdf (13 pages, 115674 bytes).
+Output written on RPG_PlanGame.pdf (13 pages, 110048 bytes).
 PDF statistics:
- 459 PDF objects out of 1000 (max. 8388607)
+ 410 PDF objects out of 1000 (max. 8388607)
  29 named destinations out of 1000 (max. 500000)
- 237 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
