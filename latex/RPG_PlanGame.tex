@@ -17,17 +17,13 @@
 \usepackage{float}
 \usepackage{minitoc}
 \usepackage{pdfpages}
-
-\usepackage{biblatex}
-\addbibresource{Projet Roundup.bib}
 %------------------------------------------------------------------
 
-\title{Document Perso}
+\title{Plan texte et histoire du RPG (sur RPG maker)}
 \author{Anthony FERRERE HOAREAU}
 \date{\today}
 
 \begin{document}
-%\includepdf[pages{1-2}, scale=0.96] {page_pdf}
 
 \maketitle
 %mettre des logo et autre (page de garde)
@@ -46,7 +42,7 @@
 
 % -----------------------TABLE DES MATIÈRES------------------------
 \thispagestyle{empty} % removes page number
-\setcounter{secnumdepth}{1}
+%\setcounter{secnumdepth}{1}
 \tableofcontents %table des matière
 \clearpage
 
@@ -54,13 +50,6 @@
 % ------------------------------Contenu--------------------------
 \setcounter{page}{1}
 \include{content}
-
-% --------------------------Bibliographie------------------------
-\section{Bibliographie}
-%\addcontentsline{toc}{section}{Bibliography}
-Le glyphosate est une espèce menacé\cite{Glyphosate_2024_def}, en effet on a ressencé une disparition de celui-ci à auteur de 30mL par seconde
-\printbibliography %afficher la bibliographie
-
 
 % --------------------------TABLE DES ANNEXES----------------------
 \clearpage
@@ -88,11 +77,6 @@ Eng'croyable texte
 
 \subsection{Annexe 2: texte}
 Bonjour
-\clearpage
-
-\subsection{Annexe 3: Trame INSA}
-\includepdf[pages={1-2}, scale=0.96] {T_insa}
-\clearpage
 
 \mtcsetrules{secttoc}{off}
 \end{document}
