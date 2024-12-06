@@ -1,0 +1,59 @@
+\newpage
+\section{Quelques commandes}
+\subsection{Insertion de listes}
+\textbf{Consignes du moodle INFO, à adapter selon le département :}
+\newline
+Le rapport comprend nécessairement des parties incontournables :
+\begin{itemize}[label=$\bullet$] %
+    \item Une \textbf{couverture} respectant le modèle unifié imposé (disponible au format .doc) et mentionnant votre numéro d'ordre (visible sur la liste des correspondants enseignants). 
+    \item La mise en page du contenu de votre document reste libre.
+    \item Si vous rédigez en LaTeX vous pouvez rajouter la couverture (après conversion en .pdf du document obtenu à partir du fichier .doc) :
+         \begin{enumerate}
+            \item page 1 : Couverture avec le titre
+            \item page 2-3 : ADA
+            \item contenu édité en LaTeX
+            \item page N-1 : double résumé 
+            \item page N : dernière couverture (avec le logo INSA)
+        \end{enumerate}
+        
+    \item Une partie introductive décrivant succinctement l'entreprise d'accueil et le sujet du stage (de quelques pages tout au plus).
+    \item Une partie principale décrivant le travail réalisé pendant le stage. Il est utile de structurer ce travail, de hiérarchiser l'importance de chaque axe (si plusieurs) afin de mieux mettre en évidence les aspects techniques complexes, non triviaux (i.e., qui prouvent qu'il s'agit d'un travail de niveau M2), sans toutefois rentrer dans tous les détails techniques des aspects moins importants. La présentation doit être « didactique » : elle doit être compréhensible par un informaticien non spécialiste du domaine d'application de votre stage. Elle doit mettre en évidence le travail que vous avez effectivement réalisé.
+    \item Une partie conclusion montrant d'une part, les apports de vos travaux pour l'entreprise et d'autre part, les enseignements que vous avez personnellement retirés de ce stage.
+    \item Une partie annexe donnant un planning du stage en semaines indiquant la durée des différentes phases (étude, analyse fonctionnelle, codage, tests...).
+    \item Une partie bibliographique comparant vos travaux avec ceux déjà effectués sera parfois nécessaire dans le document.
+    \item Un double résumé français et anglais (une page au total, en 3e de couverture, c-à-d l'avant-dernière page du rapport).
+        \begin{itemize}[label=$\diamond$]
+            \item La consigne associée à ce résumé bilingue est d'être didactique et accessible à un non informaticien, pour par exemple être compris d'un jeune étudiant intéressé par le département informatique.
+        \end{itemize}
+\end{itemize}
+Ce rapport doit être rédigé en français ou en anglais et ne pas dépasser 30 à 40 pages pour les parties mentionnées ci-dessus. Il peut être associé à une annexe technique comportant autant de documents que vous souhaitez absolument adjoindre au rapport final, mais dont la lecture doit demeurer facultative.
+\subsection{Insertion de figures}
+%------ Pour insérer et citer une image centralisée -----
+% Le premier argument est le chemin pour la photo
+% Le deuxième est la hauteur de la photo
+% Le troisième la légende
+% Le quatrième le label
+Ici, je cite la figure \ref{fig:my_label} dans le texte.
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/vincent-brunie.jpg}
+    \caption{Mettre une légende explicite à votre figure, ici M. Brunie Directeur de l'INSA Rennes.}
+    \label{fig:my_label}
+\end{figure}
+
+\subsection{Insertion d'équation}
+%------- Pour insérer et citer une équation --------------
+
+\begin{equation} \label{eq: exemple}
+\sum_{\rho=1}^{\infty} (\rho . \Delta) = 42, \Delta \in \mathbf{R}
+\end{equation}
+
+L'équation \ref{eq: exemple} est citée ici. 
+
+\subsection{Insertion d'une référence bibliographique}
+Les références (articles scientifiques, articles de journaux, blogs, pages web) doivent être mentionnées dans le texte par une balise \cite{maref} et fait le lien avec la citation incluse dans la bibliographie.
+
+\subsection{Ajout au glossaire}
+
+\acrshort{abc}* voilà comment on ajoute un acronyme au texte.
+
