@@ -49,8 +49,16 @@
                 color: white;
             }
 
-            #cadeau{
-                display: "none";
+            .cadeau{
+                display: none;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .cadeau img {
+                display: block;
+                margin: 0 auto;
             }
 
         </style>
@@ -64,9 +72,19 @@
             <button id="B_no" onclick="no_yes()">NO</button>
         </div>
 
-        <div id="cadeau">
-            <img src="cadeau.png" rel="cadeau"/>
-            <p id="valentine">Here's you're valentine day present ❤️</p>
+        <div id="Cad_Val" class="cadeau">
+            <p id="valentine">
+                I know you would say Yes ❤️ <br />
+                Here's you're valentine day present ❤️ <br />
+                I love you😘
+            </p>
+
+            <img src="cadeau.png" />
+            <p id="valentine">
+                Like the petals of this rose, my love for you is eternal, 
+                and as long as there is even a single petal left on this rose, 
+                you can be sure that my love for you will remain intact.
+            </p>
         </div>
 
         <script>
@@ -78,11 +96,10 @@
             function yes(){
                 let title = document.getElementById("valentine");
                 let button = document.getElementById("Button_yes_no");
-                let cadeau = document.getElementById("cadeau");
+                let cadeau = document.getElementById("Cad_Val");
 
                 button.style.display = "none";
-                title.textContent = "I know you would say Yes ❤️";
-                cadeau.style.display = "flex";
+                cadeau.style.display = "grid";
 
             }
 
