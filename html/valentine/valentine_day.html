@@ -61,6 +61,30 @@
                 margin: 0 auto;
             }
 
+            .box-rebours{ 
+            height: 20vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+            }
+
+            .box_jour, .box_heure, .box_minute, .box_seconde { 
+                padding: 10px; 
+            }
+
+            #jour, #heure, #minute, #seconde { 
+                background:black; 
+                padding: 10px 20px; 
+                color: white; 
+                font-size: 3rem; 
+                font-weight: bold; 
+            }
+
+            #jour_label, #heure_label, #minute_label, #seconde_label { 
+                font-size: 1.5rem; 
+            }
+
         </style>
     </head>
 
@@ -74,10 +98,35 @@
 
         <div id="Cad_Val" class="cadeau">
             <p id="valentine">
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
                 I know you would say Yes ❤️ <br />
                 Here's your valentine day present ❤️ <br />
                 I love you😘
             </p>
+
+            <div class="box-rebours">        
+                <div class="box_jour">
+                    <div id="jour">00</div>
+                    <span id="jour_label">Jours</span>
+                </div>
+                <div class="box_heure">
+                    <div id="heure">00</div>
+                    <span id="heure_label">Heures</span>
+                </div>
+                <div class="box_minute">
+                    <div id="minute">00</div>
+                    <span id="minute_label">Minutes</span>
+                </div>
+                <div class="box_seconde">
+                    <div id="seconde">00</div>
+                    <span id="seconde_label">Secondes</span>
+                </div>
+            </div>
 
             <img src="cadeau.png" />
             <p id="valentine">
@@ -119,6 +168,37 @@
                 button_no.style.fontSize = `${1}em`;
                 taille += 4;
             }
+
+            function rebour(){
+                let rebours = document.getElementById("rebours");
+                let jour = document.getElementById("jour");
+                let heure = document.getElementById("heure");
+                let minute = document.getElementById("minute");
+                let seconde = document.getElementById("seconde");
+
+                let maintenant = new Date();
+                let date_final = new Date('March 6, 2025 00:00:00');
+
+                let sec_total = (date_final - maintenant) / 1000;
+
+                if (sec_total > 0){
+
+                    let nb_jour = Math.floor(sec_total / (60*60*24));
+                    let nb_heure = Math.floor((sec_total - nb_jour * 60 * 60 * 24) / (60 * 60));
+                    let nb_minute = Math.floor((sec_total - (nb_jour * 60 * 60 * 24 + nb_heure * 60 * 60)) / (60));
+                    let nb_sec = Math.floor((sec_total - (nb_jour * 60 * 60 * 24 + nb_heure * 60 * 60 + nb_minute * 60)));
+
+                    jour.textContent = nb_jour;
+                    heure.textContent = nb_heure;
+                    minute.textContent = nb_minute;
+                    seconde.textContent = nb_sec;
+                }
+
+                let minuteur = setTimeout("rebour();", 1000);
+            }
+            
+            rebour();
+
         </script>
     </body>
 </html>
