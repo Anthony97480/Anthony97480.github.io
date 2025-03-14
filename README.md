@@ -4,3 +4,5 @@
   - ADA
   - Rstudio
   - Latex
+  - Java
+  - Ciao prolog
