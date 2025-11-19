@@ -1,0 +1,7 @@
+group: B1  # replace with your own group (A1, A2, B1, B2, C1, SC1)
+names:  # Replace with your own names (lastname first)
+  - Mathieu Titouan
+  - Ferrere Hoareau Anthony
+emails:  # Replace with your own INSA email address
+  - tmathieu@insa-toulouse.fr
+  - ferrere-hoar@insa-toulouse.fr
