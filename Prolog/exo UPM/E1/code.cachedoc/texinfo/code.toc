@@ -1,0 +1,19 @@
+\unnumbchapentry{code}{1}
+\unnumbsecentry{Usage and interface}{1}
+\unnumbsecentry{Documentation on exports}{1}
+\unnumbsubsubsecentry{author\unhbox \voidb@x \kern .06em \vbox {\hrule width.3em height.1ex}data/4 (pred)}{1}
+\unnumbsubsubsecentry{eliminar/2 (pred)}{1}
+\unnumbsubsubsecentry{controlar/2 (pred)}{1}
+\unnumbsubsubsecentry{impunidad/2 (pred)}{1}
+\unnumbsubsubsecentry{apoyar/2 (pred)}{1}
+\unnumbsubsubsecentry{hermano/2 (pred)}{1}
+\unnumbsubsubsecentry{hijo/2 (pred)}{1}
+\unnumbsubsubsecentry{abuela/2 (pred)}{2}
+\unnumbsubsubsecentry{casado/2 (pred)}{2}
+\unnumbsubsubsecentry{padres/2 (pred)}{2}
+\unnumbsubsubsecentry{padre/2 (pred)}{2}
+\unnumbsubsubsecentry{madre/2 (pred)}{2}
+\unnumbsubsubsecentry{tio/2 (pred)}{2}
+\unnumbsubsubsecentry{sobrino/2 (pred)}{2}
+\unnumbsubsubsecentry{cunyado/2 (pred)}{2}
+\unnumbsecentry{Documentation on imports}{2}

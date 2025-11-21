@@ -1,0 +1,14 @@
+\unnumbchapentry{code}{1}
+\unnumbsecentry{Usage and interface}{1}
+\unnumbsecentry{Documentation on exports}{1}
+\unnumbsubsubsecentry{author\unhbox \voidb@x \kern .06em \vbox {\hrule width.3em height.1ex}data/4 (pred)}{1}
+\unnumbsubsubsecentry{natural/1 (pred)}{1}
+\unnumbsubsubsecentry{suma/3 (pred)}{1}
+\unnumbsubsubsecentry{less/2 (pred)}{1}
+\unnumbsubsubsecentry{mod/3 (pred)}{1}
+\unnumbsubsubsecentry{par/1 (pred)}{1}
+\unnumbsubsubsecentry{impar/1 (pred)}{1}
+\unnumbsubsubsecentry{suma\unhbox \voidb@x \kern .06em \vbox {\hrule width.3em height.1ex}a\unhbox \voidb@x \kern .06em \vbox {\hrule width.3em height.1ex}lista/3 (pred)}{1}
+\unnumbsubsubsecentry{pares\unhbox \voidb@x \kern .06em \vbox {\hrule width.3em height.1ex}lista/2 (pred)}{2}
+\unnumbsubsubsecentry{extrae\unhbox \voidb@x \kern .06em \vbox {\hrule width.3em height.1ex}elemento/4 (pred)}{2}
+\unnumbsecentry{Documentation on imports}{2}

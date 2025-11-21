@@ -1,0 +1,120 @@
+
+@node code, , Top, Top
+@comment node-name, next, previous, up
+@unnumbered code
+@section Usage and interface
+@cartouche
+@itemize @bullet
+@item @b{Library usage:}
+
+@code{:- use_module(/mnt/c/Users/tonyf/OneDrive/Bureau/Documents Anthony/travail/UPM Madrid/programación declarativa/exo/E2/code.pl).}
+@item @b{Exports:}
+
+@itemize @minus
+@item @i{Predicates:}
+
+@code{author_data/4}, @code{natural/1}, @code{suma/3}, @code{less/2}, @code{mod/3}, @code{par/1}, @code{impar/1}, @code{suma_a_lista/3}, @code{pares_lista/2}, @code{extrae_elemento/4}.
+@end itemize
+@end itemize
+@end cartouche
+@section Documentation on exports
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{author_data/4 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE author_data/4:
+Ferrere Hoareau Anthony, 240915
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{natural/1 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE natural/1:
+Definition of the natural number 0=0, s(0)=1 ...
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{suma/3 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE suma/3:
+Determine the sum of X and Y
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{less/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE less/2:
+Determine if X is smaller than Y
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{mod/3 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE mod/3:
+Determine the remainder of the division of X by Y, using the predicates suma/3 and less/2
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{par/1 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE par/1:
+Determine if a number is even
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{impar/1 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE impar/1:
+Determine if a number is odd
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{suma_a_lista/3 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE suma_a_lista/3:
+Calculate the sum of each element in a list with an element N, using the predicate suma/3
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{pares_lista/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE pares_lista/2:
+Returns a list containing all the even elements of another, using the predicates par/1 and impar/1
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{extrae_elemento/4 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE extrae_elemento/4:
+Determine and remove an element E located at index I in a list
+@end deffn
+@sp 1
+
+@section Documentation on imports
+This module has the following direct dependencies:
+@itemize @minus
+@item @i{Internal (engine) modules:}
+
+@code{term_basic}, @code{basiccontrol}, @code{debugger_support}, @code{basic_props}.
+@item @i{Packages:}
+
+@code{pure}, @code{initial}, @code{condcomp}, @code{assertions}, @code{assertions/assertions_basic}.
+@end itemize

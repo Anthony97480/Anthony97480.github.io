@@ -1,0 +1,165 @@
+
+@node code, , Top, Top
+@comment node-name, next, previous, up
+@unnumbered code
+@section Usage and interface
+@cartouche
+@itemize @bullet
+@item @b{Library usage:}
+
+@code{:- use_module(/mnt/c/Users/tonyf/OneDrive/Bureau/Documents Anthony/travail/UPM Madrid/programación declarativa/exo/E1/code.pl).}
+@item @b{Exports:}
+
+@itemize @minus
+@item @i{Predicates:}
+
+@code{author_data/4}, @code{eliminar/2}, @code{controlar/2}, @code{impunidad/2}, @code{apoyar/2}, @code{hermano/2}, @code{hijo/2}, @code{abuela/2}, @code{casado/2}, @code{padres/2}, @code{padre/2}, @code{madre/2}, @code{tio/2}, @code{sobrino/2}, @code{cunyado/2}.
+@end itemize
+@end itemize
+@end cartouche
+@section Documentation on exports
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{author_data/4 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE author_data/4:
+Ferrere Hoareau Anthony, 240915
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{eliminar/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE eliminar/2:
+Determine with the predicates controlar/2, impunidad/2 and apoyar/2 if X should kill Y
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{controlar/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE controlar/2:
+Determine if X control a place and/or an element Y, using for some element the predicate apoyar/2
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{impunidad/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE impunidad/2:
+Determine with the predicate controlar/2 if X gave the impunity to Y. In this case any X who control the police will give the impunity to all Y
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{apoyar/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE apoyar/2:
+Determine if Roth gave his support to X, using the predicate impunidad/2
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{hermano/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE hermano/2:
+Determine with the predicate padres/2 if X is the brother of Y
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{hijo/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE hijo/2:
+Determine if X is the son of Y using the predicate padres/2
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{abuela/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE abuela/2:
+Determine if X is the grandmother of Y, using the predicate padres/2
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{casado/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE casado/2:
+Determine if X is marry to Y
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{padres/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE padres/2:
+Determine with the predicates padre/2 and madre/2 if X is the parent of Y
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{padre/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE padre/2:
+Determine if X is the father of Y
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{madre/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE madre/2:
+Determine if X is the mother of Y
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{tio/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE tio/2:
+Determine with the predicates hermano/2 and padres/2 if X is the uncle Y
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{sobrino/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE sobrino/2:
+Determine with the predicate tio/2 if X is the nephew/niece of Y
+@end deffn
+@sp 1
+
+@iftex
+@edef@temp{@noexpand@writetocentry{@realbackslash unnumbsubsubsecentry{cunyado/2 (pred)}}}
+@temp
+@end iftex
+@deffn PREDICATE cunyado/2:
+Determine with the predicates hermano/2 and casado/2 if X is the stepbrother/stepsister of Y
+@end deffn
+@sp 1
+
+@section Documentation on imports
+This module has the following direct dependencies:
+@itemize @minus
+@item @i{Internal (engine) modules:}
+
+@code{basic_props}, @code{term_basic}, @code{basiccontrol}, @code{debugger_support}.
+@item @i{Packages:}
+
+@code{assertions}, @code{assertions/assertions_basic}, @code{pure}, @code{initial}, @code{condcomp}.
+@end itemize

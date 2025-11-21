@@ -1,0 +1,10 @@
+\entry{author{\_}data/4:}{1}{\code {author_data/4:}}
+\entry{natural/1:}{1}{\code {natural/1:}}
+\entry{suma/3:}{1}{\code {suma/3:}}
+\entry{less/2:}{1}{\code {less/2:}}
+\entry{mod/3:}{1}{\code {mod/3:}}
+\entry{par/1:}{1}{\code {par/1:}}
+\entry{impar/1:}{1}{\code {impar/1:}}
+\entry{suma{\_}a{\_}lista/3:}{1}{\code {suma_a_lista/3:}}
+\entry{pares{\_}lista/2:}{2}{\code {pares_lista/2:}}
+\entry{extrae{\_}elemento/4:}{2}{\code {extrae_elemento/4:}}
