@@ -44,12 +44,11 @@ fibo(N, F) :-
 	fibo(N1, F1), fibo(N2, F2),
 	F is (F1+F2).
 
-fiboplus(0, _, 0).
-fiboplus(1, 0, 1).
 
-fiboplus(N, _Acu, F) :-
-	N > 1,
+fiboplus(0, 0, 1).
+fiboplus(N, Fn, Fn1) :- % n f(n) f(n+1)
+	N > 0,
 	N1 is N-1,
-	fiboplus(N1, _Acu, F1),
-	_Acu is (_Acu+F1),
-	F is (_Acu + F1).
+	fiboplus(N1, Fn2, Fn3), % n-1 f(n-1) f(n-1+1)
+	Fn is Fn3,
+	Fn1 is (Fn2+Fn3).
