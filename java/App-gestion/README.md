@@ -27,3 +27,7 @@ java -cp .\target\App-gestion-1.0.jar fh.app_gestion.app.App_Gestion
 ### Test
 
 mvn test
+
+### A faire
+
+Modifier l'emplacement ou les fichier sont enregistrer + amélioré l'affichage + créer un bouton suprimer pour retirer les tache déjà effectuer et ne pas encombré l'application

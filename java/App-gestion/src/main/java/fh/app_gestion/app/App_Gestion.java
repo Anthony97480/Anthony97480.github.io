@@ -1,23 +1,17 @@
 package fh.app_gestion.app;
 
-import fh.app_gestion.graphic_interface.MainWindows;
+import fh.app_gestion.graphic_interface.loginWindow;
 
-/**
- * Hello world!
- *
- */
+
 public class App_Gestion
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws Exception
     {
-        System.out.println( "Hello World!" );
-        System.out.println("Bonjour tous le monde !");
-
-        MainWindows window = new MainWindows();
+        loginWindow log_window = new loginWindow();
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    window.createAndShowGUI();
+                    log_window.createAndShowGUI();
                 } catch (Exception e) {
                     System.err.println("error with the creation of the window: " + e.getMessage());
                 }
