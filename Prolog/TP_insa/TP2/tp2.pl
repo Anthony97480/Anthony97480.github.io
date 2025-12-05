@@ -89,6 +89,9 @@ quicksort2([X|L], Acu, R) :-
 	quicksort2(Inf, [X|Rs], R).
 %l'intérêt de ne pas appaler append/3 est de réduire le nombre d'appel récursif
 
-a_droite(_, [], []).
+%a_droite(_, [], []).
 a_droite(X, [Y|L], L) :-
 	equals(X, Y).
+
+a_droite(X, [_Y|L], Z) :-
+	a_droite(X, L, Z).
