@@ -1,0 +1,4 @@
+en programmation logique on considère toujours que la sortie d'un prédicat est la solution de la réalisation de se prédicat:
+exemple pour coder:
+
+quicksort2(L, Acu, S): lors de ces appel récursif on considère que S est la liste trier et donc que quicksort2 réalise bien ce qu'on lui demande

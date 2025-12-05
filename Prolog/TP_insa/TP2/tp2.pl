@@ -17,7 +17,12 @@ last_element([_X|L], S) :-
 	last_element(L, S).
 
 
-add_element(L, X, [X|L]).
+add_element(X, L, [X|L]).
+
+%ajoute la liste Xs à la fin de la liste Ys
+add_list(Xs, [], Xs).
+add_list(Xs, [Y|Ys], [Y|Zs]) :-
+	add_list(Xs, Ys, Zs).
 
 add_element_last([], X, [X]).
 add_element_last([X|L], Y, [X|S]) :-
@@ -36,6 +41,7 @@ inv([X|Xs], Zs) :-
 
 equals(X, X).
 
+
 palindrome_rec([]).
 palindrome_rec([_]).
 palindrome_rec([X|L]) :-
@@ -51,17 +57,38 @@ palindrome_iter(L) :-
 %-------------------------P2--------------------------
 
 dispatch(_, [], [], []).
-dispatch(X, [E|L], Infeg, Sup) :-
-	dispatch(X, L, Infeg_Tmp, Sup),
+dispatch(X, [E|L], [E|Infeg], Sup) :-
 	(E =< X),
-	add_element(Infeg_Tmp, E, Infeg).
+	dispatch(X, L, Infeg, Sup).
 
-dispatch(X, [E|L], Infeg, Sup) :-
-	dispatch(X, L, Infeg, Sup_Tmp),
+dispatch(X, [E|L], Infeg, [E|Sup]) :-
 	(E > X),
-	add_element(Sup_Tmp, E, Sup).
+	dispatch(X, L, Infeg, Sup).
+
+
+min_element([X], X).
+min_element([X, Y|L], S) :-
+	(X >= Y),
+	min_element([Y|L], S).
+min_element([X, Y|L], S) :-
+	(X =< Y),
+	min_element([X|L], S).
 
 quicksort([], []).
-quicksort([X|L], Result) :-
-	dispatch(X, L, [I|Inf], [S|Sup]),
+quicksort([X|L], R) :-
+	dispatch(X, L, Inf, Sup),
+	quicksort(Inf, Ri),
+	quicksort(Sup, Rs),
+	append(Ri, [X|Rs], R).
 
+
+quicksort2([], Acu, Acu).
+quicksort2([X|L], Acu, R) :-
+	dispatch(X, L, Inf, Sup),
+	quicksort2(Sup, Acu, Rs), % on considère que Rs est la liste trier des élément supérieur à X
+	quicksort2(Inf, [X|Rs], R).
+%l'intérêt de ne pas appaler append/3 est de réduire le nombre d'appel récursif
+
+a_droite(_, [], []).
+a_droite(X, [Y|L], L) :-
+	equals(X, Y).
