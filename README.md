@@ -1,4 +1,4 @@
-# Bienvenue sur mon cite
+# Bienvenue sur mon site
 
 Je suis étudiant en informatique et réseau
 
