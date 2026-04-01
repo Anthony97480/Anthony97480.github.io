@@ -1,11 +1,6 @@
-# Projet perso
+# Bienvenue sur mon cite
 
-## HTML / CSS / JavaScript
+Je suis étudiant en informatique et réseau
 
-### Mini Projet INSA
-
-Création d'un jeu
-
-### Mini Projet perso
-
-Page web pour saint valentin (à supprimer)
+## Mes projets
+- [Projet 1](html/Projet_progweb/Projet_Web.html)
