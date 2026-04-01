@@ -4,8 +4,8 @@
 
 ### Mini Projet INSA
 
-m
+Création d'un jeu
 
 ### Mini Projet perso
 
-m
+Page web pour saint valentin (à supprimer)
