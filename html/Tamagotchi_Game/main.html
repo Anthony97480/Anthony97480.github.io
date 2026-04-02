@@ -21,7 +21,7 @@
         <div class="first-div">
 
             <h1>Gros Titre</h1>
-            <script>
+            <script defer>
             Module.onRuntimeInitialized = function() {
                 const add = Module.cwrap('calcul', 'number', ['string', 'number', 'number']); //argumet: NomFonction, typeRetoure, [TypeArg1, TypeArg2...]
                 console.log("5 + 5 = " + carre("ADD", 5, 5)); // 10
