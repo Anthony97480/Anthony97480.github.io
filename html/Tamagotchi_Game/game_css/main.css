@@ -1,0 +1,14 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+}
+
+.first-div{
+    background-color: #1462a5;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-decoration-color: black;
+    text-decoration-line: underline;
+}
