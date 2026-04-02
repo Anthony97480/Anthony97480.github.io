@@ -3,12 +3,30 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.first-div{
-    background-color: #1462a5;
-    font-family: Arial, sans-serif;
+.Bendeau{
+    background-color: plum;
+    text-align: center;
 }
 
-h1 {
-    text-decoration-color: black;
-    text-decoration-line: underline;
+.user-tama {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 20%;
+}
+
+.element {
+    background: lightblue;
+    padding: 20px;
+}
+
+#TamaName {
+    width: 300px;
+}
+
+.btn-start {
+    width: 300px;
 }
