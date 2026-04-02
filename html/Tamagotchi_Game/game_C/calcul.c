@@ -19,3 +19,7 @@ int calcul(const char* Opp, int val1, int val2){
         return 0;
     }
 }
+
+int test(int val){
+    return val;
+}

@@ -3,4 +3,6 @@
 
 int calcul(const char* Opp, int val1, int val2);
 
+int test(int val);
+
 #endif

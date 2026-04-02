@@ -21,11 +21,15 @@
 
             <h1>Gros Titre</h1>
             <script src="game_C/js_file/calcul.js" defer>
-            Module.onRuntimeInitialized = function() {
-                const calc = Module.cwrap('calcul', 'number', ['string', 'number', 'number']); //argumet: NomFonction, typeRetoure, [TypeArg1, TypeArg2...]
-                console.log("5 + 5 = " + calc("ADD", 5, 5)); // 10
-                console.log("5 * 5 = " + calc("MUL", 5, 5)); // 25
-            };
+                console.log("script");
+                Module.onRuntimeInitialized = function() {
+                    console.log("fonction runtime");
+                    const test = Module.cwrap('test', 'number', ['number']);
+                    console.log(test(12));
+                    const calc = Module.cwrap('calcul', 'number', ['string', 'number', 'number']); //argumet: NomFonction, typeRetoure, [TypeArg1, TypeArg2...]
+                    console.log("5 + 5 = " + calc("ADD", 5, 5)); // 10
+                    console.log("5 * 5 = " + calc("MUL", 5, 5)); // 25
+                };
             </script>
 
         </div>
