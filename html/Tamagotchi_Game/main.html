@@ -20,8 +20,11 @@
         <div class="first-div">
 
             <h1>Gros Titre</h1>
-            <script src="game_C/js_file/calcul.js" defer></script>
-            <script defer>
+
+        </div>
+
+        <script src="game_C/js_file/calcul.js" defer></script>
+            <script>
                 console.log("script");
                 Module.onRuntimeInitialized = function() {
                     console.log("fonction runtime");
@@ -32,7 +35,5 @@
                     console.log("5 * 5 = " + calc("MUL", 5, 5)); // 25
                 };
             </script>
-
-        </div>
 
     </body>
