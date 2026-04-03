@@ -40,8 +40,10 @@
                     console.log("fonction tableau");
                     const add_el = Module.cwrap('add_element', null, ['string']);
                     const get_el = Module.cwrap('get_element', 'string', ['number']);
+                    const debug_print = Module.cwrap('print_table', null, [null]);
                     add_el("T1");
                     add_el("T2");
+                    debug_print();
                     console.log(get_el(0));
                     console.log(get_el(1));
                 };

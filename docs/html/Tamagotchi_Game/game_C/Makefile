@@ -7,7 +7,8 @@ CLS ?= calcul
 %.js: %.c
 	$(CC) $< -o ./js_file/$@ $(CFLAGS) \
 	-s EXPORTED_FUNCTIONS="[$(FONC)]" \
-	-s EXPORTED_RUNTIME_METHODS="['ccall','cwrap']"
+	-s EXPORTED_RUNTIME_METHODS="['ccall','cwrap']" \
+	-s ALLOW_MEMORY_GROWTH=1
 
 clean:
 	\rm -rf ./js_file/$(CLS).js ./js_file/$(CLS).wasm

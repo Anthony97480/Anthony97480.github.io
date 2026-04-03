@@ -5,4 +5,6 @@ void add_element(char* val);
 
 char* get_element(int idx);
 
+void print_table(void);
+
 #endif

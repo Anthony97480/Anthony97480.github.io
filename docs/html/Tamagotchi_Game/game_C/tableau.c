@@ -4,7 +4,7 @@
 #include "tableau.h"
 
 typedef struct MyTable{
-    const char* Name;
+    char* Name;
     struct MyTable* next;
 } MyTable;
 
@@ -13,6 +13,7 @@ MyTable* NameTable = NULL;
 int index_NameTable = 0;
 
 void add_element(char* val){
+    printf("Ajout de: %s\n", val);
     MyTable* nextElement = (MyTable*) malloc(sizeof(MyTable));
     nextElement->Name = strdup(val);
     nextElement->next = NULL;
@@ -42,5 +43,15 @@ char* get_element(int idx){
     } else{
         printf("erreur, élément rechercher non existant");
         exit(1);
+    }
+}
+
+void print_table(void){
+    MyTable* tmp = NameTable;
+    int idx = 0;
+    while(tmp != NULL){
+        printf("Element: %s / num: %d\n", tmp->Name, idx);
+        idx++;
+        tmp = tmp->next;
     }
 }
