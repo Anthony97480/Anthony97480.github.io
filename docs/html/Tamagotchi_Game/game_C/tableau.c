@@ -19,12 +19,11 @@ void add_element(char* val){
     if(NameTable == NULL){
         NameTable = nextElement;
     } else{
-        MyTable* tmp = NameTable->next;
-        while (tmp != NULL)
-        {
+        MyTable* tmp = NameTable;
+        while (tmp->next != NULL){
             tmp = tmp->next;
         }
-        tmp = nextElement;
+        tmp->next = nextElement;
     }
     index_NameTable++;
 }

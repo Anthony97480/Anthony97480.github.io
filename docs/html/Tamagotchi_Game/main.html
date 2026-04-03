@@ -38,12 +38,12 @@
                 console.log("script");
                 Module.onRuntimeInitialized = function() {
                     console.log("fonction tableau");
-                    const add_el = Module.cwrap('add_element', 'null', ['string']);
-                    const get_el = Module.cwrap('add_element', 'string', ['number']);
+                    const add_el = Module.cwrap('add_element', null, ['string']);
+                    const get_el = Module.cwrap('get_element', 'string', ['number']);
                     add_el("T1");
                     add_el("T2");
+                    console.log(get_el(0));
                     console.log(get_el(1));
-                    console.log(get_el(2));
                 };
             </script>
 
