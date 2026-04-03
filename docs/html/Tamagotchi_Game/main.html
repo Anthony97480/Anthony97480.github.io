@@ -30,20 +30,6 @@
             </div>
 		</div>
 
-        <script>
-            var Module = Module || {};
-        </script>
-        <script src="game_C/js_file/calcul.js"></script>
-            <script>
-                console.log("script");
-                Module.onRuntimeInitialized = function() {
-                    console.log("fonction calcul");
-                    const calc = Module.cwrap('calcul', 'number', ['string', 'number', 'number']); //argumet: NomFonction, typeRetoure, [TypeArg1, TypeArg2...]
-                    console.log("5 + 5 = " + calc("ADD", 5, 5)); // 10
-                    console.log("5 * 5 = " + calc("MUL", 5, 5)); // 25
-                };
-            </script>
-
             <script>
             var Module = Module || {};
         </script>
