@@ -10,23 +10,23 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <title>
-        My Tamagotchi
+        My page
     </title>
 
     </head>
 
     <body>
         <div class="Bendeau">
-            <h1>Welcome to my tamagotchi</h1>
+            <h1>Test WebAssembly</h1>
         </div>
 
-        <div class="user-tama">
+        <div class="user-input">
             <div class="element">
-                <input type="text" id="TamaName" maxlength="50" placeholder="Entrez le nom de votre tamagotchi">
+                <input type="text" id="Name" maxlength="50" placeholder="Entrez le nom de votre tamagotchi">
             </div>
 
             <div class="element">
-                <button id="startGame" class="btn-start" onClick="StartGame()">Jouer</button>
+                <button id="btn" class="btn-start" onClick="Start()">Jouer</button>
             </div>
 		</div>
 
@@ -37,12 +37,27 @@
             <script>
                 console.log("script");
                 Module.onRuntimeInitialized = function() {
-                    console.log("fonction runtime");
-                    const test = Module.cwrap('test', 'number', ['number']);
-                    console.log(test(12));
+                    console.log("fonction calcul");
                     const calc = Module.cwrap('calcul', 'number', ['string', 'number', 'number']); //argumet: NomFonction, typeRetoure, [TypeArg1, TypeArg2...]
                     console.log("5 + 5 = " + calc("ADD", 5, 5)); // 10
                     console.log("5 * 5 = " + calc("MUL", 5, 5)); // 25
+                };
+            </script>
+
+            <script>
+            var Module = Module || {};
+        </script>
+        <script src="game_C/js_file/tableau.js"></script>
+            <script>
+                console.log("script");
+                Module.onRuntimeInitialized = function() {
+                    console.log("fonction tableau");
+                    const add_el = Module.cwrap('add_element', 'null', ['string']);
+                    const get_el = Module.cwrap('add_element', 'string', ['number']);
+                    add_el("T1");
+                    add_el("T2");
+                    console.log(get_el(1));
+                    console.log(get_el(2));
                 };
             </script>
 

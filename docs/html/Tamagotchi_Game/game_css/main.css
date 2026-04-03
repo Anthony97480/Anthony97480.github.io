@@ -8,7 +8,7 @@ body {
     text-align: center;
 }
 
-.user-tama {
+.user-input {
     display: flex;
     margin-bottom: 20px;
     width: 100%;
@@ -23,7 +23,7 @@ body {
     padding: 20px;
 }
 
-#TamaName {
+#Name {
     width: 300px;
 }
 
