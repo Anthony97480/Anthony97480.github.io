@@ -1,0 +1,219 @@
+:root {
+    --primary: #2B0057;
+    --secondary: #9966CC;
+    --white: #ffffff;
+    --light: #f4f0fa;
+}
+
+/* ====== Général ====== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #d6c1e0;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+code {
+  background-color: #eeeeee;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  padding: 0 3px;
+}
+
+/* ====== Header ====== */
+
+header {
+    background: #2B0057;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+hr {
+    display: none;
+}
+
+/* ====== Contenu principal ====== */
+
+main {
+    width: min(1200px, 95%);
+    margin: 30px auto;
+}
+
+/* ====== Onglets ====== */
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tab-button {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 20px;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.tab-button:hover {
+    transform: translateY(-2px);
+    background: #dbeafe;
+}
+
+.tab-button.active {
+    background: #2B0057;
+    color: white;
+}
+
+/* ====== Contenu onglet ====== */
+
+.tab-content {
+    display: none;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* ====== Titres ====== */
+
+h2 {
+    color: #9966CC;
+    border-bottom: 3px solid ;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #8357af;
+    margin-top: 0;
+}
+
+h4 {
+    color: #374151;
+}
+
+/* ====== Profil ====== */
+
+#profile > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* ====== Cartes ====== */
+
+section {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+}
+
+/* ====== Listes ====== */
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ====== Liens ====== */
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ====== Footer ====== */
+
+footer {
+    width: min(1200px, 95%);
+    margin: 20px auto 40px;
+}
+
+details {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
+
+summary {
+    cursor: pointer;
+    color: #2B0057;
+    font-size: 1.1rem;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #4c098f;;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.navig {
+    display: block;
+    justify-items: end;
+}
+
+/* ====== Responsive ====== */
+
+@media (max-width: 900px) {
+
+    #profile > div {
+        grid-template-columns: 1fr;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .tab-button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

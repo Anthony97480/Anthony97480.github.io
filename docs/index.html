@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <link type="text/css" rel="stylesheet" href="html/welcome_page/index.css" />
-    <script src="html/welcome_page/index.js" defer></script>
+    <head>
+        <meta charset="utf-8" />
+        <link type="text/css" rel="stylesheet" href="website/index.css" />
+        <script src="website/index.js" defer></script>
 
     <title>General information</title>
 
@@ -13,16 +13,7 @@
     <body>
 
         <header>
-            <section class="Presentation">
-                <div class="Me">
-                    <h1>I'm Anthony FERRERE HOAREAU</h1>
-                </div>
-                <div class="Description">
-                    <p>
-                        Je suis un élève ingénieur en 4éme à l'Institut national des sciences appliquées de Toulouse (l'INSA de Toulouse), spécialisé en informatique et réseau, parcours système informatique.
-                    </p>
-                </div>
-            </section>
+            <h1>Welcome to my github</h1>
         </header>
 
 
@@ -30,73 +21,172 @@
 
 
         <main>
-            <section class="experience">
-                <div class="formation">
-                    <h2>FORMATION</h2>
-                    <div class="first_form">
-                        <p>
-                            <b>Institut National des Sciences appliquées de Toulouse (2022 - 2027)</b>
-                            <ul>
-                                <li>Cursus ingénieur menant au diplome d'ingénieur en informatique et réseaux</li>
-                            </ul>
-                        </p>
-                    </div>
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab('home')">
+                    Accueil
+                </button>
+
+                <button class="tab-button" onclick="openTab('profile')">
+                    Profil
+                </button>
+
+                <button class="tab-button" onclick="openTab('exp_prof')">
+                    Expériences professionnels 
+                </button>
+
+                <button class="tab-button" onclick="openTab('proj_Aca')">
+                    Projets Académique
+                </button>
+
+                <button class="tab-button" onclick="openTab('proj_perso')">
+                    Projets personnel
+                </button>
+            </div>
+
+            <div id="home" class="tab-content active">
+                <h2>Accueil</h2>
+
+                <p>
+                    Je m'appel Anthony FERRERE HOAREAU et je suis un élève ingénieur en 4ème année à l'Institut National des Sciences Appliquées de Toulouse (INSA de Toulouse), spécialisé en informatique et réseau avec une option système informatique.
 
                     <br>
 
-                    <div class="second_form">
+                    Cette page github à pour but de me présenter, en reprenant les information de mon CV (<a href="documents/CV.pdf">ci-joint</a>). En les détaillant et ajoutant tous les différent projet de programmation que j'ai réaliser dans ma formation et en dehors de celle-ci.
+                </p>
+            </div>
+
+            <div id="profile" class="tab-content">
+                <h2>Profil</h2>
+                <div>
+                    <section class="formation">
+                    <h3>Formations:</h3>
+                    <div>
                         <p>
-                            <b>Université Politechnique de Madrid (01/2025 - 06/2025)</b>
+                            <b>
+                                Institut National des Sciences Appliquées de Toulouse (09/2022 - 07/2027).
+                            </b>
                             <ul>
-                                <li>Echange scolaire d'un semestre en spécialité ingénieurie informatique</li>
+                                <li>
+                                    <b>Localisation: </b>Toulouse, France.
+                                </li>
+                                <li>
+                                    <b>Certification: </b>Diplôme d'ingénieur.
+                                </li>
+                                <li>
+                                    <b>Status: </b>Diplôme visé.
+                                </li>
+                                <li>
+                                    <b>Spécialité: </b>Informatique et réseau.
+                                    <ul>
+                                        <li>
+                                            <b>Option: </b>Système informatique.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+
+                        <br>
+
+                        <p>
+                            <b>Université Politechnique de Madrid (01/2025 - 06/2025).</b><br>
+                            <ul>
+                                <li>
+                                    <b>Localisation: </b>Madrid, Espagne.
+                                </li>
+                                <li>
+                                    <b>Spécialité: </b>Ingénieurie informatique.
+                                </li>
+                                <li>
+                                    <b>Description: </b>Echange scolaire d'un semestre.
+                                </li>
+                            </ul>
+                        </p>
+
+                        <br>
+
+                        <p>
+                            <b>Lycée général et technologique Pierre Poivre (08/2019 - 07/2022).</b>
+                            <ul>
+                                <li>
+                                    <b>Localisation: </b>Saint-Joseph, La Réunion, France.
+                                </li>
+                                <li>
+                                    <b>Certification: </b>Baccalauréat général et technologique.
+                                </li>
+                                <li>
+                                    <b>Status: </b>Diplômé en 2022.
+                                </li>
+                                <li>
+                                    <b>Spécialité: </b>Mathématique et physique chimie.
+                                    <ul>
+                                        <li>
+                                            <b>Mention: </b>Très bien, félicitation du jury.
+                                        </li>
+                                    </ul>
+                                </li>
                             </ul>
                         </p>
                     </div>
+                    </section>
 
-                    <br>
+                    <section class="compétences">
+                        <h3>Compétences:</h3>
+                        <div>
+                            <section>
+                                <h4>Savoir faire</h4>
+                                <ul>
+                            <li>
+                                <b>Langages de programmations:</b>
+                                
+                                <br>
 
-                    <div class="third_form">
-                        <p>
-                            <b>Lycée général et technologique Pierre Poivre (2019 - 2022)</b>
-                            <ul>
-                                <li>Baccalauréat général spécialités mathématique et physique chimie, mention très bien, 2022</li>
-                            </ul>
-                        </p>
-                    </div>
+                                <p>Ada, Python, Bash, html, JavaScript, css, Java, Kotlin, SQL, VHDL, C, Latex, Lex, Yacc.</p>
+                            </li>
+                            <li>
+                                <b>Systèmes d'exploitations:</b>
+
+                                <br>
+
+                                <p>Linux, Windows.</p>
+                            </li>
+                            <li>
+                                <b>Outil informatique:</b>
+
+                                <br>
+
+                                <p>Matlab, Git, Keil, Maven, Vivado, Jira, Android Studio.</p>
+                            </li>
+                            <li>
+                                <b>Langue vivante:</b>
+
+                                <br>
+
+                                <ul>
+                                    <li><b>Français: </b>Langue maternel</li>
+                                    <li><b>Anglais: </b>Niveau B2</li>
+                                    <li><b>Espagnol: </b>Niveau A2</li>
+                                </ul>
+                            </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h4>Savoir être</h4>
+                                <ul>
+                                    <li>Adaptation.</li>
+                                    <li>Raisonnement.</li>
+                                    <li>Organisation pour la gestion de projet (Jira).</li>
+                                    <li>Grande capacité d'analyse.</li>
+                                    <li>Apprentissage rapide de nouvelle notion.</li>
+                                    <li>Curieux: une envie de comprendre comment les choses fonctionnes.</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </section>
                 </div>
-
-                <div class="profes">
-                    <h2>EXPERIENCES PROFESSIONNEL</h2>
-                    <div class="first_exp">
-                        <ul>
-                            <li><b>Stage ouvrier | 2023, duré: 1 mois</b></li>
-                        </ul>
-                        <p>
-                            Fabrication et montage de charpentes métalliques.<br>
-                            Entreprise de construction: Solution BTP (anciennement: Société Montage Océan Indien), l'Etang-Salé, Réunion 974.<br>
-                            Compétences développées: Gestion du temps et travail sous pression.
-                        </p>
-                    </div>
-
-                    <br>
-
-                    <div class="second_exp">
-                        <ul>
-                            <li><b>Stage d'observation | 2018, duré: 3 jours</b></li>
-                        </ul>
-                        <p>
-                            Suivit de la demande et de la réalisation d'un acte auprès d'un notaire. Étude notarial: SCP Chantal DUGAIN Ulrich QUINOT Gilles GERCARA Pierre K/OURIO et Ivan PERETTON, Saint-Louis, Réunion 974.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <hr>
-
-            <section class="Comp">
-
-                <div class="Vie_Asso">
-                    <h2>ACTIVITÉ ET VIE ASSOCIATIVE</h2>
+                <section>
+                    <h3>Activité associative</h3>
                     <p>
                         Tuteur égalité des chances pour l'association "Ô talent" de l'INSA Toulouse (10/2023 - 01/2024) pour les cordées de la réussite:
                         <ul>
@@ -118,77 +208,454 @@
                             </li>
                         </ul>
                     </p>
-                </div>
+                </section>
+            </div>
 
-                <div class="Competience">
-                    <h2>COMPETENCE</h2>
-                    <p>
+            <div id="exp_prof" class="tab-content">
+                <h2>Expériences professionnels</h2>
+                <section class="stages">
+                    <h3>Stage:</h3>
+                    <div>
                         <ul>
                             <li>
-                                <b>Langages de programmation:</b>
+                                <b>Stage ouvrier</b>
                             </li>
-                            Python, Bash, C, JavaScript, Ada, Latex, Java, Kotlin, SQL, Vivado.<br><br>
-                            
-                            <li>
-                                <b>Système d'exploitation:</b>
-                            </li>
-                            Linux, Windows<br><br>
 
-                            <li>
-                                <b>Application:</b>
-                            </li>
-                            MATLAB, git, Rstudio, keil<br><br>
+                            <ol>
+                                <li>
+                                    <b>Début/Fin: </b>07/2023 - 08/2023 (1 mois).
+                                </li>
 
-                            <li>
-                                <b>Langues:</b>
-                            </li>
-                            Français: LM / Anglais: B1 / Espagnol: B1<br><br>
+                                <li>
+                                    <b>Entreprise: </b>Solution BTP (anciennement: Société Montage Océan Indien), l'Etang-Salé, Réunion 974.
+                                </li>
 
-                            <li>
-                                <b>Cas Pratique:</b>
-                                <ul>
-                                    <li>
-                                        Développement:
-                                        <ol>
-                                            <li>
-                                                Mini projet: Création d'une application Android pour la navigation prenant en compte le niveau de stresse des utilisateur.
-                                            </li>
+                                <li>
+                                    <b>Compétence développées: </b>Gestion du temps et travail d'équipe.
+                                </li>
 
-                                            <li>
-                                                Mini projet: Création d'un compilateur pour une portion réduite du langage C et mise en place d'un pipeline 5 couche sur un micro-controleur FPGA
-                                            </li>
+                                <li>
+                                    <b>Missions: </b>Fabrication et montage de charpentes métalliques.
+                                </li>
 
-                                            <li>
-                                                Mini projet: Commande d'un micro-controleur pour la navigation d'un voilier modèle réduit
-                                            </li>
-                                        </ol>
-                                    </li>
-
-                                    <li>
-                                        Réseau:
-                                        <ol>
-                                            <li>
-                                                Travaux pratique: Mise en place au sein du réseau de l'INSA d'un mini réseau local composer de 6 machine (4 utilisateur de 2 routeur) disperser sur deux VLAN différent et d'un proxy permettant de faire le lien vers l'extérieur sur une autre machine dans internet.
-                                            </li>
-                                        </ol>
-                                    </li>
-                                </ul>
-                            </li>
+                                <li>
+                                    <b>Document: </b>
+                                    <a href="documents/Stage_ouvrier.pdf">
+                                        Rapport de stage.
+                                    </a>
+                                </li>
+                            </ol>
                         </ul>
-                    </p>
-                </div>
+                    </div>
 
-            </section>
+                    <br>
+
+                    <div>
+                        <ul>
+                            <li>
+                                <b>Stage d'observation</b>
+                            </li>
+                            <ol>
+                                <li>
+                                    <b>Début/Fin: </b>12/2018 - 12/2018 (3 jours).
+                                </li>
+                                <li>
+                                    <b>Entreprise: </b>Étude notarial: SCP Chantal DUGAIN Ulrich QUINOT Gilles GERCARA Pierre K/OURIO et Ivan PERETTON, Saint-Louis, Réunion 974.
+                                </li>
+                                <li>
+                                    <b>Mission observer: </b>Suivit de la demande et de la réalisation d'un acte auprès d'un notaire. 
+                                </li>
+                            </ol>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div id="proj_Aca" class="tab-content">
+                <h2>Projets Académique</h2>
+
+                <section>
+                    <h3>Projet d'initiation à la recherche</h3>
+                    <ul>
+                        <li>
+                            <b>Réalisé en 2026.</b>
+                        </li>
+                        <li>
+                            <b>But/Consigne:</b><br>
+                            Proposer une solution intelligente, qui esploite les avancée de l'intelligence artificielle, permettant d'accompagner et de facilité les déplacement des personnes TSA (Trouble du Spectre de l'Autisme).
+                        </li>
+                        <li>
+                            <b>Ce qui a été réalisé:</b><br>
+                            Dans un groupe de 7 étudiant, il a été décidé, suite au résultat de l'état de l'art réaliser (<a href="Project/Academic_project/PIR/state_of_art.pdf">ci-joint</a>), de concevoir une application mobile d'aide à la navigation en prenant en compte différent paramètre pouvant engendré du stresse chez les individus afin de un itinéraire pour un point de départ et une destination donnée.
+                            <ol>
+                                <li>
+                                    <b>Description: </b>
+                                    Projet réalisé en coopération entre l'<a target="_blank" href="https://www.insa-toulouse.fr/">INSA</a> et le <a target="_blank" href="https://www.laas.fr/">LASS-CNRS</a> de Toulouse. L'application mobile du nom de ASDIA (Autisim Spectrum Desorder Itinary Asistante) est composé d'un front-end, application mobile codé en kotlin et d'un back-end composé de deux serveur, un FastAPI python afin de réceptionner les requête et parser correctement les JSON et de récupérer via des API les information de la ville de Toulouse concernant les facteur pouvant engendré du stresse chez un individus. Ce serveur est en communication avec un autre serveur en C++ cette fois-ci, servant uniquement au calcule des itinéraire à l'aide d'un algorithme dijkstra.<br>
+                                    Le principe de l'application est de récolté les donnée de l'utilisation via un quiz présent uniquement au lancement de l'application, afin de récupérer les préférences des utilisation en fonction de situation donnée, pour fournir ces information de stresse au serveur afin de calculer l'itinéraire le plus adapter à l'utilisateur. Et de permettre à l'utilisateur de rentré une demande d'itinéraire et de la ressevoir en l'affichant sur une carte.<br>
+                                    Pour l'instant tous les itinéraire calculer ne fonctionne que sur la ville de Toulouse, étant donnée que toutes les information sont récupére via les API de cette même ville uniquement.
+                                </li>
+                                <li>
+                                    <b>Technologies: </b>
+                                    Android studio, FastAPI, Git, Jira et UML/Modèle relationnel.
+                                </li>
+                                <li>
+                                    <b>Langages: </b>
+                                    C++, Kotlin et Python.
+                                </li>
+                                <li>
+                                    <b>Mon rôle: </b>
+                                    J'ai été attribuer à la réalisation de la partie front-end de l'application en Kotlin et à une partie de la communication du front-end et du back-end via des appels http du coté applicatif afin d'envoyer et de réceptionner les JSON contenant les information des itinéraire calculée.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <b>Rapport du projet: </b>
+                            <a href="Project/Academic_project/PIR/PIR_article.pdf">Article scientifique</a>
+                        </li>
+                        <li>
+                            <b>Présentation: </b>
+                            <a href="Project/Academic_project/PIR/PIR.html">Site web de présentation</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Projet Système informatique</h3>
+                    <ul>
+                        <li>
+                            <b>Réalisé en 2026.</b>
+                        </li>
+                        <li>
+                            <b>But/Consigne:</b><br>
+                            Réaliser par groupe de deux un compilateur pour une portion réduite du langages C (oppération arithmétique et logique de base, boucle while, condition if else, print) ayant en sortie le langage assembleur/binaire(sur 32bit) correspondant au code C d'entré. Puis réaliser sur un FPGA une architecture RISC avec 5 couche de pipeline et exécuté le code C à l'aide de la sortie binaire produire par le compilateur sur le FPGA.
+                        </li>
+                        <li>
+                            <b>Ce qui a été réalisé:</b><br>
+                            <ol>
+                                <li>
+                                    <b>Description:</b>
+                                    <ol type="a">
+                                        <li>
+                                            <b>Compilateur: </b>
+                                            Pour le compilateur, il a été décidé de réaliser une implémantion orienté regitre et donc, toutes les variable du code une fois parsé sont enregistrer dans une table des symbole et les indexes de cette table sont utiliser afin de générer la table assembleur (qui est un liste chainé représentant chacune des instruction que devra réaliser notre processeur) qui à la fin de du parsage du code C sera convertie en binaire et retournée dans un fichier. Le contenu de se fichier sera ensuite utiliser Par le processeur RISC.<br>
+                                            Il a également été décidé de tenir trace des élément dans la table des symbole avec deux variable distincte afin de pouvoir faire la différence entre les variable du code et les variable temporaire nécessaire au oppération assembleur. Les deux liste chainé représentant les table assembleur et des symbole, sont ainsi réculièrement modifier:
+                                            <ol type="i">
+                                                <li>
+                                                    Pour la table assembleur: pour tenir tace des jump dans le cas des condition et boucle.
+                                                </li>
+                                                <li>
+                                                    Pour la table de symbole: afin de supprimer les variable temporaire inutile après parsage mais aussi supprimer les variable en tenant en compte leur profondeur afin d'empêcher l'utilisateur d'utiliser une variable déclarer dans une structute à l'extérieur de celle-ci.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <b>Processeur RISC: </b>
+                                            Composer d'un ALU, d'un banc de mémoire, d'un banc d'instruction, d'un banc de registre, et des étage du pipeline afin de relier chacun des différent composant de l'architecture. De nombreuse simplification ont été réaliser dans le code étant donnée le nombre d'instruction et le nombre de bits sur lequels étaient les élément, les signaux vhdl sont le plus souvent sur 4 à 8 bits.<br>
+                                            Par manque de temps, les étages du pipeline, ne prennent en compte que les oppération assembleur COP et AFC.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <b>Technologies: </b>
+                                    Vivado, Git, FPGA.
+                                </li>
+                                <li>
+                                    <b>Langages: </b>
+                                    C, Lex, Yacc, VHDL.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <b>Rapport du Projet: </b>
+                            <a href="Project/Academic_project/PSI/Rapport.pdf">Rapport</a>
+                        </li>
+                        <li>
+                            <b>Présentation: </b>
+                            <a href="Project/Academic_project/PSI/PSI.html">Site web de présentation</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Informatique embarquée</h3>
+                    <ul>
+                        <li>
+                            <b>Réalisé en 2025.</b>
+                        </li>
+                        <li>
+                            <b>But/Consigne:</b><br>
+                            Par groupe de 4 avec une carte STM32 et des capters, commender un voillier modèle réduit pour que ces voiles s'ouvre ou se ferme en fonction de l'orientation du vents, que l'on recoive un message d'avertissement en cas de batterie faible ou de suralimentation et à l'aide du télécommande, faire pivoté le socle surlequel est posé le voillier.
+                        </li>
+                        <li>
+                            <b>Ce qui a été réalisé:</b><br>
+                            <ol>
+                                <li>
+                                    <b>Description: </b>
+                                    A l'aide de l'ADC, USART, de TIMER ainsi que des différent capter du voillier, toutes les fonction ont été réaliser
+                                </li>
+                                <li>
+                                    <b>Technologie: </b>
+                                    keil, STM32 et Git
+                                </li>
+                                <li>
+                                    <b>Langages: </b>
+                                    C
+                                </li>
+                                <li>
+                                    <b>Mon rôle: </b>
+                                    A l'aide des informations renvoyées par la girouette, calcule de l'angle de la voile en fonction de l'angle du vent et orientation de celle-ci à l'aide d'un cerveau-moteur.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <b>Présentation: </b> 
+                            <a href="Project/Academic_project/IE/IE.html">Site web de présentation</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>ChatSystem</h3>
+                    <ul>
+                        <li>
+                            <b>Réalisé en 2025.</b>
+                        </li>
+                        <li>
+                            <b>But/Consigne:</b><br>
+                            Par groupe de 2, réaliser une application en Java, permettant la communication entre différents utilisateurs sur un réseau local sans utiliser de serveur.
+                        </li>
+
+                        <li>
+                            <b>Ce qui a été réalisé:</b><br>
+                            <ol>
+                                <li>
+                                    <b>Description: </b>
+                                    L'application est capable de détecter sur un réseau local les autre utilisateur connecter à celle-ci via l'envoie d'une requête UDP en broadcast et celle-ci constitue ainsi une liste des utilisateur connecter afin de permettre à l'utilisateur de l'application de savoir qui est connecter et de pouvoir communiquer via l'envoie de message TCP au autres utilisateur présents sur l'application sur le réseau. L'application permet aux utilisateurs de pouvoir de se connecter et se déconnecter de celle-ci (pour être visible ou non sur le réseau) et empêche toute utilisateur d'avoir deux même nom d'utilisateur ou d'utiliser un langage ingurier pour se connecter.<br>
+                            
+                                    L'application est ainsi à la fois un serveur et un client TCP. L'application met en place une base de donnée SQL en local permettant d'enregistrer les utilisateur connue (et plus exactement leur ID unique) ainsi que leur conversation afin que même si un utilisateur change de pseudo, l'historique de conversation est concerver. Cependant cette méthode local imposé présente des limite, si un utilisateur utilise un autre ordinateur, celui-ci ne possédant pas la base de donnée local créer par l'application, toutes les données sont donc inaccessible.
+                                </li>
+                                <li>
+                                    <b>Technologie: </b>
+                                    Maven, SQLite, Jira, UML/Modèle relationnel et Git
+                                </li>
+                                <li>
+                                    <b>Langages: </b>
+                                    Java et SQL
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <b>Rapport du projet: </b>
+                            <a href="Project/Academic_project/chatSystem/Rapport_ChatSystem.pdf">Rapport</a>
+                        </li>
+                        <li>
+                            <b>Présentation: </b>
+                            <a href="Project/Academic_project/chatSystem/ChatSystem.html">Site Web de présentation</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Jeu Web</h3>
+                    <ul>
+                        <li>
+                            <b>Réalisé en 2024.</b>
+                        </li>
+                        <li>
+                            <b>But/Consigne:</b><br>
+                            Par pair, réaliser une application web en n'utilisant uniquement du HTML, CSS et JavaScript. Puis la maintenir sur un serveur.
+                        </li>
+                        <li>
+                            <b>Ce qui a été réalisé:</b><br>
+                            Pour ce projet, il a été décider de réaliser un jeu dans lequel deux joueur s'affronteraient (en local sur le même ordinateur).
+                            <ol>
+                                <li>
+                                    <b>Description: </b>Un joueur incarne un "boss" et doit essayer de tuer l'autre joueur. L'objectif du second joueur est de survivre le plus longtemps possible pour obtenir le meilleur temps possible. Une fois la partie terminée, son score apparaît sur le tableau des scores dans le menu princial.<br>
+                                    L'objectif fixé était de se focaliser sur le jeu en lui-même qui représenterait l'application web, l'accent a donc été porter sur celui-ci. De plus par manque de temps, la menu principal est donc bien moins détaillé que le jeu.
+                                </li>
+                                <li>
+                                    <b>Langages: </b> HTML, CSS et JavaScript.
+                                </li>
+                            </ol>
+                        </li>
+                        <li>
+                            <b>Démo:</b> <a href="Project/Academic_project/ProgWeb/Projet_Web.html">Projet Jeu Web</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div id="proj_perso" class="tab-content">
+                <h2>Projets personnel</h2>
+
+                <section>
+                    <h3>API de gestion de bibliothèque (en cours de développement)</h3>
+                    <ul>
+                        <li>
+                            <b>Réalisé en 2026.</b>
+                        </li>
+                        <li>
+                            <b>Status: </b>En cours de développement.
+                        </li>
+                        <li>
+                            <b>But/Consigne:</b><br>
+                            Réaliser une application web, intéragissant avec une API permettant à un utilisateur de se creer plusieurs comptes et de pouvoir enregistrer sur chacun de ces compte plusieurs bibliothèque de donnée, contenant des information varier tel que des films, des série, des tâche à réaliser...<br>
+                            Le tout enregistrer dans une base de donnée local.
+                        </li>
+                        <li>
+                            <b>Ce qui a été réalisé:</b><br>
+                            <ol>
+                                <li>
+                                    <b>Description: </b>
+                                    <ol type="a">
+                                        <li>
+                                            <b>Front-end (site web HTML, CSS et JavaScript): </b>
+                                            <ol type="i">
+                                                <li>
+                                                    <b>Elément déjà implémenté: </b>
+                                                </li>
+                                                <li>
+                                                    <b>Elément en cours de développement: </b>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>
+                                            <b>Back-end (API Spring-boot Java et base de donnée SQL): </b>
+                                            <ol type="i">
+                                                <li>
+                                                    <b>Elément déjà implémenter: </b>
+                                                    Création de la base de donnée en local, avec la mise en place de table pour les compte utilisateur ainsi que les bibliothèque et les caractéristique de chacun.<br>
+                                                    Mise en place des EndPoint permettant d'intéragir avec l'API concernant l'ajout, la suppréssion de compte ou de bibliothèque ainsi que la visualisation/recupération de ceux-ci avec des requête: <code>POST</code>, <code>GET</code>, et <code>DELETE</code>.
+                                                </li>
+                                                <li>
+                                                    <b>Elément en cours d'implémentation: </b>
+                                                    Ajout aux EndPoint ainsi qu'à la base de donnée la possibilité d'ajouter des Films, série et tâche aux bibliothèque via de nouvelle table dans celle-ci.
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <b>Technologies: </b>
+                                    Maven, Spring-boot, Git, UML/Modèle relationnel et SQLite.
+                                </li>
+                                <li>
+                                    <b>Langages: </b>
+                                    Java, HTML, CSS JavaScript et SQL.
+                                </li>
+                            </ol>
+                        </li>
+                        <li style="display: none;">
+                            <b>Rapport du projet: </b>
+                            <a href="" onclick="msg_dev()">Rapport</a>
+                        </li>
+                        <li style="display: none;">
+                            <b>Présentation: </b>
+                            <a href="" onclick="msg_dev()">Site web de présentation</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>flower friends (en cours de développement)</h3>
+                    <ul>
+                        <li>
+                            <b>Réalisé en 2025.</b>
+                        </li>
+                        <li>
+                            <b>Status: </b>En cours de développement.
+                        </li>
+                        <li>
+                            <b>But/Consigne:</b><br>
+                            Creer une application mobile en se basant sur un jeu de Tamagotchi mais revisité, en ajoutant des mini jeu et en prenant soin d'une fleure qui évoluera en une fée.
+                        </li>
+                        <li>
+                            <b>Ce qui a été réalisé:</b><br>
+                            <ol>
+                                <li>
+                                    <b>Description: </b>
+                                    <ol type="a">
+                                        <li>
+                                            <b>Elément déjà implémenté: </b>
+                                            Création de la page d'acceuil et la naissance du compagnon avec ces caractéristique de base.
+                                        </li>
+                                        <li>
+                                            <b>Elément en cours de développement/de réflexion: </b>
+                                            Les mécanique d'évolution des caractéristique, ainsi que de la prise de soin du compagnon et les mini jeu.
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <b>Technologies: </b>
+                                    Android studio, Git et UML/Modèle relationnel.
+                                </li>
+                                <li>
+                                    <b>Langages: </b>
+                                    Kotlin, Python.
+                                </li>
+                            </ol>
+                        </li>
+                        <li style="display: none;">
+                            <b>Rapport du projet: </b>
+                            <a href="" onclick="msg_dev()">Rapport</a>
+                        </li>
+                        <li style="display: none;">
+                            <b>Présentation: </b>
+                            <a href="" onclick="msg_dev()">Site web de présentation</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
         </main>
-
-        <hr>
 
         <footer>
             <details>
                 <summary><b>My contact:</b></summary>
                 <p>
-                    Insa: ferrere-hoar@insa-toulouse.fr<br>
-                    Perso: anthonyferrereh@hotmail.com<br>
+                    <ul>
+                        <li>
+                            <h3>Mail:</h3>
+                            <ul>
+                                <li>
+                                    <b>Insa: </b>
+                                    <a href="mailto:ferrere-hoar@insa-toulouse.fr">
+                                        ferrere-hoar@insa-toulouse.fr
+                                    </a>
+                                </li>
+                                <li>
+                                    <b>Principal: </b>
+                                    <a href="mailto:tony.ferrere.h@gmail.com">
+                                        tony.ferrere.h@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <b>Secondaire: </b>
+                                    <a href="mailto:anthonyferrereh@hotmail.com">
+                                        anthonyferrereh@hotmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Site</h3>
+                            <ul>
+                                <li>
+                                    <b>Github: </b>
+                                    <a target="_blank" href="https://github.com/Anthony97480">
+                                        github.com/Anthony97480
+                                    </a>
+                                </li>
+                                <li>
+                                    <b>Linkedin: </b>
+                                    <a target="_blank" href="https://www.linkedin.com/in/anthony-ferrere-hoareau-148a4325a/">
+                                        Linkedin/Anthony
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </p>
             </details>
         </footer>
