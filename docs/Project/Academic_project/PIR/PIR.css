@@ -55,7 +55,7 @@ nav a:hover {
 /* HERO */
 
 .hero {
-    text-align: center;
+    text-align: left;
 
     padding: 100px 20px;
 }
@@ -182,6 +182,8 @@ nav a:hover {
 
 .img_app {
     width: 250px;
+    display: block;
+    margin: 10% auto;
 }
 
 .img_app.acc {
@@ -190,10 +192,10 @@ nav a:hover {
 
 .img_app.quiz {
     width: 250px;
-    display: block;
-    margin: 0 auto;
 }
 
 .descript_img {
-    text-align: center;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
 }
