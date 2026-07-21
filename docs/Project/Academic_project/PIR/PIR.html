@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASDIA</title>
+    <link rel="stylesheet" href="PIR.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            ASDIA
+        </div>
+
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#carte">Carte</a>
+            <a href="#profil">Paramètres</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Autism Spectrum Disorder Itinerary Assistant</h1>
+
+            <p>
+                Une application permettant d'adapter les trajets aux sensibilités
+                des personnes atteintes de TSA.
+            </p>
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <h2>🧠 Stress</h2>
+
+                <p>
+                    Analyse des facteurs de stress :
+                    bruit, foule, lumière et imprévisibilité.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>📝 Quiz</h2>
+
+                <p>
+                    Questionnaire interactif permettant de définir votre profil.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>🗺️ Navigation</h2>
+
+                <p>
+                    Calcul d'itinéraires adaptés à vos sensibilités.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="info">
+
+            <h2>Notre mission</h2>
+
+            <p>
+                Faciliter les déplacements des personnes autistes grâce
+                aux données environnementales et à des algorithmes
+                de routage intelligents.
+            </p>
+
+        </section>
+
+        <section id="accueil" class="hero">
+
+            <h2>Page d'accueil</h2>
+
+            <div class="demo_content">
+
+                <section class="demo_content">
+                    <img
+                        class="img_app acc"
+                        src="assets/accueil.jpg"
+                        alt="Image de la page d'accueil"
+                    />
+                    <img
+                        class="img_app acc"
+                        src="assets/info.jpeg"
+                        alt="Image des informations"
+                    />
+                </section>
+
+                <section class="descript_img">
+
+                    <p>
+                        Notre page d'accueil ainsi que toute l'application est basée
+                        sur des tons de vert afin d'avoir une couleur rassurante
+                        pour l'utilisateur.
+
+                        <br><br>
+
+                        Il a été décidé de prendre un cerveau comme logo afin de
+                        représenter notre mission.
+
+                        <br><br>
+
+                        Deux boutons sont présent sur cette page, un pour donnée plus ample information à l'utilisateur sur le but du projet et de l'application. Et un autre bouton afin de lancer l'application (menant soit au Quiz si il s'agit du premier lancement de l'application soit directement à la carte).
+                    </p>
+
+                </section>
+
+            </div>
+
+        </section>
+
+        <section id="quiz" class="hero">
+
+            <h2>Page de quiz</h2>
+
+            <div class="demo_content">
+
+                <section class="descript_img">
+
+                    <p>
+                        Notre quiz interactif vous permet de définir votre profil en répondant à des questions basées sur des situations réels afin de permettre à l'utilisateur de se mettre en condition et pouvoir indiquer un niveau de stresse lié à cette situation. Ces données ainsi collectées par se quiz, sont alors utilisées pour générer le chemin optimal évitant au maximum toute source de stresse pour cet utilisateur.
+
+                        <br><br>
+
+                        Ces informations personnels, sont uniquement concervées sur l'appareil de l'utilisateur et peuvent être modifiées à tout instant depuis les paramètres de l'application, et sont anonimiser lors de l'envoie de celle-ci au serveur pour calcul de l'itinéraire. En effet n'ayant aucun compte utilisateur, aucune donnée personnels hors mis les valeurs des paramètres du stresse sont envoyer au serveur qui une fois les données utilisées, désalloue la mémoire alloué à ceux-ci et donc ne concerve aucune données de l'utilisateur.
+                    </p>
+
+
+                </section>
+
+                <section class="demo_content">
+                    <img
+                        class="img_app quiz"
+                        src="assets/quiz.jpeg"
+                        alt="Image du quiz"
+                    >
+                </section>
+
+            </div>
+
+        </section>
+
+        <section id="carte" class="hero">
+
+            <h2>Page de la carte</h2>
+
+            <div class="demo_content">
+
+                <section class="demo_content"s>
+                    <img
+                        class="img_app map"
+                        src="assets/map.jpeg"
+                        alt="Image de la carte"
+                    >
+
+                    <img 
+                        class="img_app map"
+                        src="assets/search.jpeg"
+                        alt="Image de la page de recherche"/>
+                </section>
+
+                <section class="descript_img">
+
+                    <p>
+                        Notre application utilise des algorithmes de routage intelligents (algorithme dijkstra) pour calculer des itinéraires adaptés aux besoins spécifiques des utilisateurs.
+
+                        <br><br>
+
+                        Les facteurs environnementaux pouvant changer d'une heure à une autres par exemple avec l'affluence de personne aux heures de pointe, nous avons donc décidé de ne prendre en compte que l'heure d'arriver souhaité par l'utilisateur ou ne pas la prendre en compte si l'utilisateur laisse le champs vide.
+
+                        <br><br>
+
+                        Toujours en prenant en considération la variance des facteurs environnementaux, notre équipe a décidé de permettre aux utilisateurs de pouvoir sauvegarder en local le trajet que notre algorithme leur à proposer afin de se conformer au besoin des différents utilisateurs pouvant par exemple être stressé par un changement dans leur routine.
+                    </p>
+
+                </section>
+
+            </div>
+
+        </section>
+
+        <section id="profil" class="hero">
+
+            <h2>Page des paramètres</h2>
+
+            <div class="demo_content">
+
+
+                <section class="descript_img">
+
+                    <p>
+                        Notre application vous permet de personnaliser vos préférences et de gérer vos données.
+
+                        <br><br>
+
+                        En effet au sein des paramètres de l'application, tout utilisateurs peut acceder à ces trajets sauvegardés, aux informations de l'application, à ces données (séparer en différentes sections, représentant les différents facteurs environnementaux pouvant générer du stresse) et pouvoir les modifier et enfin à une section leur permettant de modifier les paramètre de son de l'application.
+
+                        <br><br>
+
+                        Etant donnée le temps impartie pour le développement, un assistant vocal d'aide à la direction était prévus au developpement pour aider les utilisateurs lors de leur trajet, et les parmètres du son aurait concerné cette fonctionnalité. Cependant par manque de temps, celle-ci n'as pas été implémenté. Laissant cette section des paramètres inutile pour le moment.
+                    </p>
+
+                </section>
+
+                <section class="demo_content">
+                    <img
+                        class="img_app settings"
+                        src="assets/setting.jpeg"
+                        alt="Image des paramètres"
+                    >
+
+                    <img
+                        class="img_app settings"
+                        src="assets/favourite.jpeg"
+                        alt="Image de"
+                    />
+
+                    <img
+                        class="img_app settings"
+                        src="assets/data.jpeg"
+                        alt="Image de"
+                    />
+
+                    <img
+                        class="img_app settings"
+                        src="assets/sound.jpeg"
+                        alt="Image de"
+                    />
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

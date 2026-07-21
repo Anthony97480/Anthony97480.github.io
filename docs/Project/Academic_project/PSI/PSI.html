@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link type="text/css" rel="stylesheet" href="PSI.css" />
+        <script src="PSI.js" defer></script>
+
+    <title>Projet Système informatique</title>
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Projet Système informatique</h1>
+        </header>
+
+        <main>
+
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab('compilo')">
+                    Compilateur
+                </button>
+
+                <button class="tab-button" onclick="openTab('process')">
+                    Processeur
+                </button>
+            </div>
+
+            <div id="compilo" class="tab-content active">
+                <div class="navig">
+                    <nav>
+                        <a href="#accueil_compilo">Accueil</a>
+                        <a href="#test_compilo">Tests</a>
+                        <a href="#dev_compilo">Développement</a>
+                    </nav>
+                </div>
+
+                <div class="content">
+                    <section id="accueil_compilo">
+                        <h2>Accueil</h2>
+                    </section>
+
+                    <section id="test_compilo">
+                        <h2>Tests</h2>
+                    </section>
+
+                    <section id="dev_compilo">
+                        <h2>Développement</h2>
+                    </section>
+                </div>
+            </div>
+
+            <div id="process" class="tab-content">
+                <div class="navig">
+                    <nav>
+                        <a href="#accueil_process">Accueil</a>
+                        <a href="#test_process">Tests</a>
+                        <a href="#dev_process">Développement</a>
+                    </nav>
+                </div>
+
+                <div class="content">
+                    <section id="accueil_process">
+                        <h2>Accueil</h2>
+                    </section>
+
+                    <section id="test_process">
+                        <h2>Tests</h2>
+                    </section>
+
+                    <section id="dev_process">
+                        <h2>Développement</h2>
+                    </section>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+
+        </footer>
+    </body>
+
+</html>

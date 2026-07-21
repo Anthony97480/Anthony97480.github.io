@@ -1,7 +1,3 @@
-# Bienvenue sur mon site
+# Bienvenue sur mon github
 
-Je suis étudiant-ingénieur en informatique et réseau.
-
-## Mes projets
-- [Projet 1(insa - programmation web): Création d'un jeu avec html, css et js et déploiement de celui-ci](html/Projet_progweb/Projet_Web.html)
-- [Projet 2(En développement)](html/Tamagotchi_Game/main.html)
+Je suis un élève-ingénieur en 5ème année (à partir de Septembre 2026) de l’INSA (Institut National des Sciences Appliquées) de Toulouse, spécialisé en informatique et réseau, option système informatique et en 5ème année une majeur en Système Distribué et Big Data.
